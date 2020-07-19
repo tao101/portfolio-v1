@@ -1,0 +1,15 @@
+.logo {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+.logo:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.navBar {
+}
+
+.darkMode {
+  transform: rotate(150deg);
+}

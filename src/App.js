@@ -1,26 +1,31 @@
 import React from "react";
-import logo from "./logo.svg";
+
+import NavBar from "./componenets/NavBar";
+
+import Colors from "./assets/colors";
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    darkMode: true,
+  };
+
+  switchDark = () => {
+    const { darkMode } = this.state;
+    this.setState({ darkMode: !darkMode });
+  };
+  render() {
+    const { darkMode } = this.state;
+    const bgColor = Colors(darkMode, "bgC");
+    return (
+      <div style={{ backgroundColor: bgColor }} className="container-xl">
+        <div className="App">
+          <NavBar switchDark={this.switchDark} darkMode={darkMode} />
+          <hr />
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
