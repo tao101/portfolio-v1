@@ -1,0 +1,21 @@
+.skills {
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
+  text-align: center;
+  padding-top: 10vw;
+  padding-bottom: 30vh;
+
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+  text-align: center;
+}
+.skillImg {
+  padding-top: 25%;
+}
+.item {
+  margin: 10px;
+}
+h3 {
+}
+
+.row {
+}

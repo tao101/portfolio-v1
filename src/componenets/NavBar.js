@@ -23,9 +23,10 @@ class NavBar extends React.Component {
         variant={darkMode}
         expand="lg"
         style={{ backgroundColor: Colors(this.props.darkMode, "bgC") }}
-        className="navBar shadow-lg"
+        className="navBar shadow-lg navbar-slide-nav"
         collapseOnSelect
         fixed="top"
+        sticky="top"
       >
         <Navbar.Brand href="#home">
           <img
@@ -40,7 +41,7 @@ class NavBar extends React.Component {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto">
+          <Nav className="ml-auto navbar-slide offcanvas">
             <Nav.Link href="#Home">Home</Nav.Link>
             <Nav.Link href="#About">About</Nav.Link>
             <Nav.Link href="#Blog">Blog</Nav.Link>
