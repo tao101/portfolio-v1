@@ -18,25 +18,37 @@ export default class Skills extends React.Component {
                 src={require("../assets/webDev.svg")}
                 className="img-fluid skillImg"
               />
-              <h3 style={{ color: Colors(!darkMode, "bgC") }}>
+
+              <h3
+                className="itemTitle"
+                style={{ color: Colors(!darkMode, "bgC") }}
+              >
                 Full stack development
               </h3>
             </div>
             <div className="col-sm item">
               <img
-                src={require("../assets/webDev.svg")}
+                src={require("../assets/mobDev.svg")}
                 className="img-fluid skillImg"
               />
-              <h3 style={{ color: Colors(!darkMode, "bgC") }}>
+              <h3
+                className="itemTitle"
+                style={{ color: Colors(!darkMode, "bgC") }}
+              >
                 Mobile App Development
               </h3>
             </div>
             <div className="col-sm item">
               <img
-                src={require("../assets/webDev.svg")}
+                src={require("../assets/ui.svg")}
                 className="img-fluid skillImg"
               />
-              <h3 style={{ color: Colors(!darkMode, "bgC") }}>UI/UX Design</h3>
+              <h3
+                className="itemTitle"
+                style={{ color: Colors(!darkMode, "bgC") }}
+              >
+                UI/UX Design
+              </h3>
             </div>
           </div>
         </div>

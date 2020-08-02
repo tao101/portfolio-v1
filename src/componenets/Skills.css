@@ -2,19 +2,22 @@
   padding-left: 5vw !important;
   padding-right: 5vw !important;
   text-align: center;
-  padding-top: 10vw;
+  padding-top: 25vh;
   padding-bottom: 30vh;
 
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
   text-align: center;
 }
 .skillImg {
-  padding-top: 25%;
+  width: 25vh !important;
+  height: 25vh !important;
 }
 .item {
-  margin: 10px;
+  margin: 2vw;
 }
-h3 {
+.itemTitle {
+  margin-top: 2vh;
+  font-size: 1.6rem;
 }
 
 .row {

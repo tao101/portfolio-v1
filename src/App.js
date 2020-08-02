@@ -3,13 +3,14 @@ import React from "react";
 import NavBar from "./componenets/NavBar";
 import Intro from "./componenets/Intro";
 import Skills from "./componenets/Skills";
+import Education from "./componenets/Education";
 
 import Colors from "./assets/colors";
 import "./App.css";
 
 class App extends React.Component {
   state = {
-    darkMode: false,
+    darkMode: true,
   };
 
   switchDark = () => {
@@ -25,6 +26,7 @@ class App extends React.Component {
           <NavBar switchDark={this.switchDark} darkMode={darkMode} />
           <Intro darkMode={darkMode} />
           <Skills darkMode={darkMode} />
+          <Education darkMode={darkMode} />
         </div>
       </div>
     );

@@ -1,0 +1,25 @@
+.item {
+}
+
+.card {
+  margin: 1vw;
+}
+
+.languages {
+  display: flex;
+  background-color: blue;
+}
+.avatarContainer {
+  display: flex;
+  background-color: yellow;
+}
+.avatar {
+  margin: 15px;
+  flex: 1;
+  background-color: red;
+}
+
+.avatar:hover {
+  filter: none;
+  transform: scale(1.4);
+}
