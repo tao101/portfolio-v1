@@ -5,18 +5,29 @@
   margin: 1vw;
 }
 
-.languages {
+.centerX {
   display: flex;
-  background-color: blue;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.avatarContainer {
+
+.logos {
   display: flex;
-  background-color: yellow;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .avatar {
-  margin: 15px;
-  flex: 1;
-  background-color: red;
+  margin: 5px;
+  height: 5vw !important;
+  width: 5vw !important;
+  align-self: center;
+}
+.name {
+  text-align: center;
+  font-size: smaller;
 }
 
 .avatar:hover {
