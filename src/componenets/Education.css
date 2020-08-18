@@ -20,13 +20,11 @@
 }
 
 .avatar {
-  margin: 5px;
-
   align-self: center;
 }
 .name {
   text-align: center;
-  font-size: smaller;
+  font-size: 1.3vw;
 }
 
 .avatar:hover {

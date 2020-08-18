@@ -20,6 +20,8 @@ import parse from "../assets/parse.svg";
 import mysql from "../assets/mysql.svg";
 import firebase from "../assets/firebase.svg";
 import expo from "../assets/expo.svg";
+import cordova from "../assets/cordova.svg";
+import es6 from "../assets/es6.svg";
 
 export default class Education extends React.Component {
   render() {
@@ -48,7 +50,7 @@ export default class Education extends React.Component {
           >
             <CardContent>
               <h3 style={{ color: Colors(darkMode, "headline") }}>
-                Android Basics by Google
+                Become an Android Developer
               </h3>
               <Typography color="textSecondary">@ udacity</Typography>
             </CardContent>
@@ -59,7 +61,7 @@ export default class Education extends React.Component {
           >
             <CardContent>
               <h3 style={{ color: Colors(darkMode, "headline") }}>
-                Become an Android Developer
+                Become an Ios Developer
               </h3>
               <Typography color="textSecondary">@ udacity</Typography>
             </CardContent>
@@ -271,6 +273,20 @@ export default class Education extends React.Component {
                   nodejs
                 </h4>
               </div>
+              <div className="col-2 logos">
+                <img
+                  className="avatar img-fluid"
+                  alt="es6"
+                  src={es6}
+                  title="es6"
+                />
+                <h4
+                  className="name"
+                  style={{ color: Colors(darkMode, "headline") }}
+                >
+                  es6
+                </h4>
+              </div>
             </div>
             <div className="row">
               <div className="col-2 logos">
@@ -327,6 +343,20 @@ export default class Education extends React.Component {
                   style={{ color: Colors(darkMode, "headline") }}
                 >
                   git
+                </h4>
+              </div>
+              <div className="col-2 logos">
+                <img
+                  className="avatar img-fluid"
+                  alt="cordova"
+                  src={cordova}
+                  title="cordova"
+                />
+                <h4
+                  className="name"
+                  style={{ color: Colors(darkMode, "headline") }}
+                >
+                  cordova
                 </h4>
               </div>
             </div>
