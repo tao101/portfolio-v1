@@ -10,19 +10,26 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: red;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 .logos {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .avatar {
-  margin: 5px;
-
   align-self: center;
+  width: 7vw;
+  height: 7vw;
 }
 .name {
   text-align: center;
