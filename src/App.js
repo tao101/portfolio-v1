@@ -12,7 +12,7 @@ import "./App.css";
 
 class App extends React.Component {
   state = {
-    darkMode: true,
+    darkMode: false,
   };
 
   switchDark = () => {

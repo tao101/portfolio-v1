@@ -27,8 +27,8 @@ export default class Intro extends React.Component {
             variant="contained"
             size="large"
             style={{
-              backgroundColor: Colors(darkMode, "white"),
-              color: Colors(darkMode, "blue"),
+              backgroundColor: Colors(darkMode, "blue"),
+              color: Colors(darkMode, "white"),
             }}
             className="button shadow-lg"
             href={resumeUrl}
@@ -39,8 +39,11 @@ export default class Intro extends React.Component {
             variant="contained"
             size="large"
             style={{
-              backgroundColor: Colors(darkMode, "blue"),
-              color: Colors(darkMode, "white"),
+              borderColor: Colors(darkMode, "blue"),
+              color: Colors(darkMode, "blue"),
+              borderWidth: "2px",
+              backgroundColor: "transparent",
+              borderStyle: "solid",
             }}
             className="button shadow-lg"
             href="#Contact"
