@@ -10,7 +10,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: red;
 }
 
 .container {
@@ -31,6 +30,7 @@
   width: 7vw;
   height: 7vw;
 }
+
 .name {
   text-align: center;
   font-size: 1.3vw;
@@ -39,4 +39,32 @@
 .avatar:hover {
   filter: none;
   transform: scale(1.4);
+}
+
+@media (min-width: 1800px) {
+  .avatar {
+    align-self: center;
+    width: 5vw;
+    height: 5vw;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 600px) {
+  .underOne {
+    flex-direction: column;
+  }
+
+  .avatar {
+    align-self: center;
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .avatar {
+    align-self: center;
+    width: 15vw;
+    height: 15vw;
+  }
 }

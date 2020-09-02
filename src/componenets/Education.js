@@ -1,13 +1,13 @@
 import React from "react";
 import Colors from "../assets/colors";
 import "./Education.css";
-import { Card, CardContent, Typography, Avatar } from "@material-ui/core";
+import { Card, CardContent, Typography } from "@material-ui/core";
 import csharp from "programming-languages-logos/src/csharp/csharp.svg";
 import cpp from "programming-languages-logos/src/cpp/cpp.svg";
 import css from "../assets/css.png";
 import react from "../assets/react.svg";
 import mobx from "../assets/mobx.svg";
-import reactNative from "../assets/reactNative.png";
+
 import html from "../assets/html.svg";
 import java from "programming-languages-logos/src/java/java.svg";
 import swift from "programming-languages-logos/src/swift/swift.svg";
@@ -28,7 +28,7 @@ export default class Education extends React.Component {
     const darkMode = this.props.darkMode;
 
     return (
-      <div className="row container-lx intro Home">
+      <div className="row container-lx intro Home underOne">
         <div className="col-sm item">
           <h3 style={{ color: Colors(darkMode, "headline") }}>Education</h3>
           <Card
@@ -50,9 +50,20 @@ export default class Education extends React.Component {
           >
             <CardContent>
               <h3 style={{ color: Colors(darkMode, "headline") }}>
-                FULL stack react the complete guide to reactjs and friends
+                Fullstack React The Complete Guide to ReactJS and Friends
               </h3>
-              <Typography color="textSecondary">book By newline.co</Typography>
+              <Typography color="textSecondary">Book By newline.co</Typography>
+            </CardContent>
+          </Card>
+          <Card
+            className="card"
+            style={{ backgroundColor: Colors(darkMode, "bgLight") }}
+          >
+            <CardContent>
+              <h3 style={{ color: Colors(darkMode, "headline") }}>
+                Fullstack React Native
+              </h3>
+              <Typography color="textSecondary">Book By newline.co</Typography>
             </CardContent>
           </Card>
           <Card
@@ -63,9 +74,7 @@ export default class Education extends React.Component {
               <h3 style={{ color: Colors(darkMode, "headline") }}>
                 Become an Android Developer
               </h3>
-              <Typography color="textSecondary">
-                course by udacity.com
-              </Typography>
+              <Typography color="textSecondary">@ Udacity.com</Typography>
             </CardContent>
           </Card>
           <Card
@@ -74,9 +83,9 @@ export default class Education extends React.Component {
           >
             <CardContent>
               <h3 style={{ color: Colors(darkMode, "headline") }}>
-                Become an Android Developer
+                Fullstack Node.js
               </h3>
-              <Typography color="textSecondary">@ udacity</Typography>
+              <Typography color="textSecondary">Book By newline.co</Typography>
             </CardContent>
           </Card>
         </div>

@@ -17,6 +17,7 @@ export default class Skills extends React.Component {
               <img
                 src={require("../assets/webDev.svg")}
                 className="img-fluid skillImg"
+                alt="Full stack development"
               />
 
               <h3
@@ -30,6 +31,7 @@ export default class Skills extends React.Component {
               <img
                 src={require("../assets/mobDev.svg")}
                 className="img-fluid skillImg"
+                alt="Mobile App Development"
               />
               <h3
                 className="itemTitle"
@@ -42,6 +44,7 @@ export default class Skills extends React.Component {
               <img
                 src={require("../assets/ui.svg")}
                 className="img-fluid skillImg"
+                alt="UI/UX Design"
               />
               <h3
                 className="itemTitle"

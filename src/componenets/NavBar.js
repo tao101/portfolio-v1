@@ -11,9 +11,9 @@ import Colors from "../assets/colors";
 
 class NavBar extends React.Component {
   onDarkMode = () => {
-    const { darkMode } = this.props;
     this.props.switchDark();
   };
+
   render() {
     const darkMode = this.props.darkMode ? "dark" : "light";
 
@@ -30,7 +30,6 @@ class NavBar extends React.Component {
       >
         <Navbar.Brand href="#home">
           <img
-            alt=""
             src={logo}
             width="60"
             height="60"

@@ -4,6 +4,8 @@ import NavBar from "./componenets/NavBar";
 import Intro from "./componenets/Intro";
 import Skills from "./componenets/Skills";
 import Education from "./componenets/Education";
+import Projects from "./componenets/Projects";
+import Contact from "./componenets/Contact";
 
 import Colors from "./assets/colors";
 import "./App.css";
@@ -27,6 +29,8 @@ class App extends React.Component {
           <Intro darkMode={darkMode} />
           <Skills darkMode={darkMode} />
           <Education darkMode={darkMode} />
+          <Projects darkMode={darkMode} />
+          <Contact darkMode={darkMode} />
         </div>
       </div>
     );

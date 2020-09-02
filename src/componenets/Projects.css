@@ -1,0 +1,18 @@
+.Projects {
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
+  text-align: center;
+  padding-top: 25vh;
+  padding-bottom: 5vh;
+
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.cardImg {
+  height: 28vw !important;
+}
