@@ -6,6 +6,7 @@ import Skills from "./componenets/Skills";
 import Education from "./componenets/Education";
 import Projects from "./componenets/Projects";
 import Contact from "./componenets/Contact";
+import Footer from "./componenets/Footer";
 
 import Colors from "./assets/colors";
 import "./App.css";
@@ -31,6 +32,7 @@ class App extends React.Component {
           <Education darkMode={darkMode} />
           <Projects darkMode={darkMode} />
           <Contact darkMode={darkMode} />
+          <Footer darkMode={darkMode} />
         </div>
       </div>
     );
