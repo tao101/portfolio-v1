@@ -48,7 +48,7 @@ export default class Contact extends React.Component {
                 backgroundColor: Colors(darkMode, "blue"),
                 color: Colors(darkMode, "white"),
               }}
-              className="button shadow-lg"
+              className="button shadow-lg emailField"
             >
               Subscribe
             </Button>
