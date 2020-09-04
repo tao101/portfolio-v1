@@ -10,18 +10,18 @@
 .subsEmailContainer {
   text-align: center;
 
-  width: 70vw;
+  width: 60vw;
   padding: 2vw 3vw;
   align-self: center;
   border: 2px;
   border-radius: 8px;
   position: relative;
-  bottom: -15vw;
+  bottom: -12vh;
 }
 
 .formContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -30,4 +30,20 @@
   margin-left: 2vw !important;
   width: 60vw !important;
   border-color: red !important;
+}
+
+.button {
+  margin: 1vw 0px !important;
+  margin-left: 2vw !important;
+  width: 60vw !important;
+  border-color: red !important;
+  width: 15vw !important;
+}
+
+.bigText {
+  font-size: 3vw;
+}
+
+.smallText {
+  font-size: 1.5vw;
 }

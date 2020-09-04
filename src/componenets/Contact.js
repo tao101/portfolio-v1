@@ -26,10 +26,13 @@ export default class Contact extends React.Component {
           className="subsEmailContainer MuiPaper-elevation24"
           style={{ backgroundColor: Colors(darkMode, "bgC") }}
         >
-          <h2 style={{ color: Colors(!darkMode, "bgC") }}>
+          <h2 className="bigText " style={{ color: Colors(!darkMode, "bgC") }}>
             Subscribe to taoufiqlotfi.tech
           </h2>
-          <h4 style={{ color: Colors(!darkMode, "bgC") }}>
+          <h4
+            className="smallText "
+            style={{ color: Colors(!darkMode, "bgC") }}
+          >
             And get the latest articles delivered right to your inbox!
           </h4>
           <form className="formContainer" noValidate autoComplete="off">
@@ -39,7 +42,7 @@ export default class Contact extends React.Component {
               label="yourEmail@example.com"
               variant="outlined"
               required
-              color="red"
+              color="secondary"
             />
             <Button
               variant="contained"
@@ -48,7 +51,7 @@ export default class Contact extends React.Component {
                 backgroundColor: Colors(darkMode, "blue"),
                 color: Colors(darkMode, "white"),
               }}
-              className="button shadow-lg emailField"
+              className="button shadow-lg "
             >
               Subscribe
             </Button>
