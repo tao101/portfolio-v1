@@ -1,8 +1,10 @@
+/*
 import React from "react";
 import Colors from "../assets/colors";
 import "./Footer.css";
 
 import { Card } from "@material-ui/core";
+
 
 export default class Footer extends React.Component {
   render() {
@@ -14,3 +16,4 @@ export default class Footer extends React.Component {
     );
   }
 }
+*/

@@ -11,10 +11,30 @@ export default class Contact extends React.Component {
     return (
       <div className="Contact ">
         <h3 style={{ color: Colors(!darkMode, "bgC") }}>
-          Feel free to email me via{" "}
+          Feel free to email me @{" "}
           <a href="mailto:leh.lotfi@gmail.com">leh.lotfi@gmail.com </a>
-          or social media
         </h3>
+
+        <form name="contactForm" method="post" netlify>
+          <p>
+            <label>
+              Your Name: <input type="text" name="name" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email: <input type="email" name="email" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message: <textarea name="message"></textarea>
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
 
         <h5 style={{ color: Colors(!darkMode, "bgC") }}>
           <a href="https://image.winudf.com/v2/image/bXBsLmNvbS5jb21pbmdzb29uX3NjcmVlbl8wXzE1MzQ3NTgxODFfMDQ0/screen-0.jpg?fakeurl=1&type=.jpg">
@@ -51,7 +71,7 @@ export default class Contact extends React.Component {
                 backgroundColor: Colors(darkMode, "blue"),
                 color: Colors(darkMode, "white"),
               }}
-              className="button shadow-lg "
+              className="buttons shadow-lg "
             >
               Subscribe
             </Button>
