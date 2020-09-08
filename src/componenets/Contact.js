@@ -15,7 +15,7 @@ export default class Contact extends React.Component {
           <a href="mailto:leh.lotfi@gmail.com">leh.lotfi@gmail.com </a>
         </h3>
 
-        <form name="contactForm" method="post" netlify data-netlify="true">
+        <form name="contactForm" method="post" data-netlify="true" netlify>
           <p>
             <label>
               Your Name: <input type="text" name="name" />

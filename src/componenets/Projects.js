@@ -36,6 +36,13 @@ export default class Projects extends React.Component {
             link="https://ontwik-dev.com/founders"
             description="Collect stars & avoid obstacles while trying to put the ball into the right basket to unlock new levels!"
           />
+          <CostumCard
+            darkMode={darkMode}
+            img={ontwik}
+            title="ontwik"
+            link="https://ontwik-dev.com/founders"
+            description="Collect stars & avoid obstacles while trying to put the ball into the right basket to unlock new levels!"
+          />
         </div>
       </div>
     );
