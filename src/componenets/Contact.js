@@ -5,6 +5,12 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import { Card } from "@material-ui/core";
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 export default class Contact extends React.Component {
   state = {
     contactName: "",
@@ -26,14 +32,20 @@ export default class Contact extends React.Component {
     this.setState({ subscribeEmail: e.target.value });
   };
 
-  handleFormSubmit = (elevation: ,) => {
+  handleFormSubmit = (e) => {
     const { contactName, contactEmail, contactMessage } = this.state;
     fetch("/", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", {name:contactName,email:contactEmail,message:contactMessage })
-    }).then(() => alert("Success!"))
-      .catch(error => alert(error));
+      headers: { "Content-Type": "ap)plication/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": "contact",
+        name: contactName,
+        email: contactEmail,
+        message: contactMessage,
+      }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
 
     e.preventDefault();
   };
