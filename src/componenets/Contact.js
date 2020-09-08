@@ -44,7 +44,7 @@ export default class Contact extends React.Component {
         message: contactMessage,
       }),
     })
-      .then(() => alert("Success!"))
+      .then(() => alert("Message sent we will Contact you as soon as possible"))
       .catch((error) => alert(error));
 
     e.preventDefault();
@@ -61,8 +61,8 @@ export default class Contact extends React.Component {
 
         <form name="contactForm" onSubmit={this.handleFormSubmit}>
           <p>
-            <label>
-              Your Name:{" "}
+            <label class="label name">
+              Your Name:<br></br>
               <input
                 value={this.state.contactName}
                 onChange={this.onNameChange}
@@ -73,7 +73,7 @@ export default class Contact extends React.Component {
           </p>
           <p>
             <label>
-              Your Email:{" "}
+              Your Email:<br></br>
               <input
                 type="email"
                 name="email"
@@ -84,7 +84,7 @@ export default class Contact extends React.Component {
           </p>
           <p>
             <label>
-              Message:{" "}
+              Message:<br></br>
               <textarea
                 name="message"
                 value={this.state.contactMessage}
