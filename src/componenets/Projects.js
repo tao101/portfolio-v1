@@ -18,6 +18,7 @@ export default class Projects extends React.Component {
     return (
       <div
         className="Projects "
+        id="projects"
         style={{ backgroundColor: Colors(darkMode, "skills") }}
       >
         <h1 style={{ color: Colors(!darkMode, "bgC") }}>Featured Projects</h1>

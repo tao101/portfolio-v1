@@ -50,58 +50,97 @@ export default class Contact extends React.Component {
     e.preventDefault();
   };
 
+  onSubscribe = (e) => {
+    alert("thanks for Subscribing");
+    e.preventDefault();
+  };
+
   render() {
     const darkMode = this.props.darkMode;
     return (
-      <div className="Contact ">
+      <div className="Contact " id="contact">
         <h3 style={{ color: Colors(!darkMode, "bgC") }}>
           Feel free to email me @{" "}
           <a href="mailto:leh.lotfi@gmail.com">leh.lotfi@gmail.com </a>
+          <br />
+          Or fill in the contact form down below
         </h3>
 
         <form name="contactForm" onSubmit={this.handleFormSubmit}>
           <p>
-            <label class="label name">
-              Your Name:<br></br>
+            <label className="label">
+              <p
+                className="name"
+                style={{
+                  color: Colors(darkMode, "headline"),
+                }}
+              >
+                Your Name:
+              </p>
               <input
+                className="labelInput"
                 value={this.state.contactName}
                 onChange={this.onNameChange}
                 type="text"
                 name="name"
+                required
               />
             </label>
           </p>
           <p>
-            <label>
-              Your Email:<br></br>
+            <label className="label ">
+              <p
+                className="email"
+                style={{
+                  color: Colors(darkMode, "headline"),
+                }}
+              >
+                Your Email:
+              </p>
+
               <input
+                className="labelInput"
                 type="email"
                 name="email"
                 value={this.state.contactEmail}
                 onChange={this.onContactEmailChange}
+                required
               />
             </label>
           </p>
           <p>
-            <label>
-              Message:<br></br>
+            <label className="label ">
+              <p
+                className="message"
+                style={{
+                  color: Colors(darkMode, "headline"),
+                }}
+              >
+                Message:
+              </p>
               <textarea
+                className="labelInput"
                 name="message"
                 value={this.state.contactMessage}
                 onChange={this.onContactMessageChange}
+                required
               ></textarea>
             </label>
           </p>
           <p>
-            <button type="submit">Send</button>
+            <Button
+              style={{
+                backgroundColor: Colors(darkMode, "blue"),
+                color: Colors(darkMode, "white"),
+                marginLeft: "0px",
+              }}
+              className="SendButtons shadow-lg "
+              type="submit"
+            >
+              Send
+            </Button>
           </p>
         </form>
-
-        <h5 style={{ color: Colors(!darkMode, "bgC") }}>
-          <a href="https://image.winudf.com/v2/image/bXBsLmNvbS5jb21pbmdzb29uX3NjcmVlbl8wXzE1MzQ3NTgxODFfMDQ0/screen-0.jpg?fakeurl=1&type=.jpg">
-            Why there is no Contact Form ?
-          </a>
-        </h5>
 
         <Card
           className="subsEmailContainer MuiPaper-elevation24"
@@ -116,7 +155,7 @@ export default class Contact extends React.Component {
           >
             And get the latest articles delivered right to your inbox!
           </h4>
-          <form className="formContainer" noValidate autoComplete="off">
+          <form className="formContainer" onSubmit={this.onSubscribe}>
             <TextField
               className="emailField"
               id="outlined-basic"
@@ -124,6 +163,13 @@ export default class Contact extends React.Component {
               variant="outlined"
               required
               color="secondary"
+              type="email"
+              InputProps={{
+                className: "emailFieldInput",
+                style: {
+                  color: Colors(!darkMode, "bgC"),
+                },
+              }}
             />
             <Button
               variant="contained"
@@ -133,6 +179,7 @@ export default class Contact extends React.Component {
                 color: Colors(darkMode, "white"),
               }}
               className="buttons shadow-lg "
+              type="submit"
             >
               Subscribe
             </Button>

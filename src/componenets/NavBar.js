@@ -42,9 +42,10 @@ class NavBar extends React.Component {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto navbar-slide offcanvas">
             <Nav.Link href="#Home">Home</Nav.Link>
-            <Nav.Link href="#About">About</Nav.Link>
-            <Nav.Link href="#Blog">Blog</Nav.Link>
-            <Nav.Link href="#Contact">Contact</Nav.Link>
+            <Nav.Link href="#skills">Skills</Nav.Link>
+            <Nav.Link href="#education">Education & Languages</Nav.Link>
+            <Nav.Link href="#projects">Featured Projects</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
             <Nav.Link>
               <Brightness3Icon
                 onClick={this.onDarkMode}

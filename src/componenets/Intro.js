@@ -7,7 +7,7 @@ export default class Intro extends React.Component {
     const resumeUrl = "https://smakosh.com/";
     const darkMode = this.props.darkMode;
     return (
-      <div className="container-xl intro Home">
+      <div className="container-xl intro Home" id="Home">
         <h1 className="h1" style={{ color: Colors(darkMode, "headline") }}>
           I'm Lotfi Taoufiq
         </h1>

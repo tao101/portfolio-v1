@@ -8,6 +8,7 @@ export default class Skills extends React.Component {
     return (
       <div
         className="skills "
+        id="skills"
         style={{ backgroundColor: Colors(darkMode, "skills") }}
       >
         <h1 style={{ color: Colors(!darkMode, "bgC") }}>Skills</h1>

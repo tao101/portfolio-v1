@@ -8,10 +8,11 @@ body {
 }
 
 .App {
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 .intro {
-  padding-top: 3%;
+  padding-top: 8vw;
   padding-left: 5vw !important;
   padding-right: 5vw !important;
 }

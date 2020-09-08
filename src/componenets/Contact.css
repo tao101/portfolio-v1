@@ -31,6 +31,9 @@
   width: 60vw !important;
   border-color: red !important;
 }
+.emailFieldInput {
+  color: white;
+}
 
 .buttons {
   margin: 1vw 0px !important;
@@ -46,4 +49,48 @@
 
 .smallText {
   font-size: 1.5vw;
+}
+
+.label {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.labelInput {
+  width: 40vw;
+}
+.labelInput:focus {
+  outline-color: red;
+}
+
+.name {
+  font-size: 2vw;
+  line-height: 3vw;
+  margin: 10px;
+  padding: 1vw 0px;
+  margin: 0px;
+}
+.email {
+  font-size: 2vw;
+  line-height: 3vw;
+  margin: 10px;
+  padding: 1vw 0px;
+  margin: 0px;
+}
+.message {
+  font-size: 2vw;
+  line-height: 3vw;
+  margin: 10px;
+  padding: 1vw 0px;
+  margin: 0px;
+}
+
+.SendButtons {
+  margin: 1vw 0px !important;
+
+  width: 60vw !important;
+
+  width: 15vw !important;
 }

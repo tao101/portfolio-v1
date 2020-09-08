@@ -16,6 +16,21 @@ class App extends React.Component {
     darkMode: false,
   };
 
+  componentDidMount = () => {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      // dark mode
+      this.setState({ darkMode: true });
+    }
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (e) => {
+        this.setState({ darkMode: e.matches });
+      });
+  };
+
   switchDark = () => {
     const { darkMode } = this.state;
     this.setState({ darkMode: !darkMode });
