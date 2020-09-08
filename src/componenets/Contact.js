@@ -36,7 +36,7 @@ export default class Contact extends React.Component {
     const { contactName, contactEmail, contactMessage } = this.state;
     fetch("/", {
       method: "POST",
-      headers: { "Content-Type": "ap)plication/x-www-form-urlencoded" },
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": "contact",
         name: contactName,
