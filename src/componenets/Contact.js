@@ -6,6 +6,38 @@ import Button from "@material-ui/core/Button";
 import { Card } from "@material-ui/core";
 
 export default class Contact extends React.Component {
+  state = {
+    contactName: "",
+    contactEmail: "",
+    contactMessage: "",
+    subscribeEmail: "",
+  };
+
+  onNameChange = (e) => {
+    this.setState({ contactName: e.target.value });
+  };
+  onContactEmailChange = (e) => {
+    this.setState({ contactEmail: e.target.value });
+  };
+  onContactMessageChange = (e) => {
+    this.setState({ contactMessage: e.target.value });
+  };
+  onSubscribeEmailChange = (e) => {
+    this.setState({ subscribeEmail: e.target.value });
+  };
+
+  handleFormSubmit = (elevation: ,) => {
+    const { contactName, contactEmail, contactMessage } = this.state;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", {name:contactName,email:contactEmail,message:contactMessage })
+    }).then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+
   render() {
     const darkMode = this.props.darkMode;
     return (
@@ -15,20 +47,37 @@ export default class Contact extends React.Component {
           <a href="mailto:leh.lotfi@gmail.com">leh.lotfi@gmail.com </a>
         </h3>
 
-        <form name="contactForm" method="post" data-netlify="true" netlify>
+        <form name="contactForm" onSubmit={this.handleFormSubmit}>
           <p>
             <label>
-              Your Name: <input type="text" name="name" />
+              Your Name:{" "}
+              <input
+                value={this.state.contactName}
+                onChange={this.onNameChange}
+                type="text"
+                name="name"
+              />
             </label>
           </p>
           <p>
             <label>
-              Your Email: <input type="email" name="email" />
+              Your Email:{" "}
+              <input
+                type="email"
+                name="email"
+                value={this.state.contactEmail}
+                onChange={this.onContactEmailChange}
+              />
             </label>
           </p>
           <p>
             <label>
-              Message: <textarea name="message"></textarea>
+              Message:{" "}
+              <textarea
+                name="message"
+                value={this.state.contactMessage}
+                onChange={this.onContactMessageChange}
+              ></textarea>
             </label>
           </p>
           <p>
