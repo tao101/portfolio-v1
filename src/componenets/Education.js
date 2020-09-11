@@ -28,11 +28,14 @@ export default class Education extends React.Component {
     const darkMode = this.props.darkMode;
 
     return (
-      <div className="row container-lx intro Home underOne" id="education">
+      <div
+        className="Education container-xl intro Home underOne"
+        id="education"
+      >
         <div className="col-sm item">
           <h3 style={{ color: Colors(darkMode, "headline") }}>Education</h3>
           <Card
-            className="card"
+            className="card MuiPaper-elevation24	"
             style={{ backgroundColor: Colors(darkMode, "bgLight") }}
           >
             <CardContent>
@@ -45,7 +48,7 @@ export default class Education extends React.Component {
             </CardContent>
           </Card>
           <Card
-            className="card"
+            className="card MuiPaper-elevation24"
             style={{ backgroundColor: Colors(darkMode, "bgLight") }}
           >
             <CardContent>
@@ -56,7 +59,7 @@ export default class Education extends React.Component {
             </CardContent>
           </Card>
           <Card
-            className="card"
+            className="card MuiPaper-elevation24"
             style={{ backgroundColor: Colors(darkMode, "bgLight") }}
           >
             <CardContent>
@@ -67,7 +70,7 @@ export default class Education extends React.Component {
             </CardContent>
           </Card>
           <Card
-            className="card"
+            className="card MuiPaper-elevation24"
             style={{ backgroundColor: Colors(darkMode, "bgLight") }}
           >
             <CardContent>
@@ -78,7 +81,7 @@ export default class Education extends React.Component {
             </CardContent>
           </Card>
           <Card
-            className="card"
+            className="card MuiPaper-elevation24"
             style={{ backgroundColor: Colors(darkMode, "bgLight") }}
           >
             <CardContent>

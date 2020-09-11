@@ -8,8 +8,7 @@
 }
 
 .navBar {
-  padding-left: 10vw !important;
-  padding-right: 10vw !important;
+  padding: auto;
 }
 
 .darkMode {

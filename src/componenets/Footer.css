@@ -1,16 +1,16 @@
 .Footer {
-  padding-left: 8vw !important;
-  padding-right: 5vw !important;
-  padding-top: 20vw;
+  padding-top: 15vw;
   padding-bottom: 10vw;
-  display: flex;
-  flex-direction: column;
+
   background: rgb(0, 114, 255);
   background: linear-gradient(
     198deg,
     rgba(0, 114, 255, 1) 0%,
     rgba(0, 198, 255, 1) 100%
   );
+}
+
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +24,7 @@
 .footerSocail {
   display: flex;
   flex-direction: column;
-  width: 90vw;
+
   justify-content: center;
   align-items: center;
 }
@@ -34,6 +34,8 @@
 }
 
 .footerCopyright {
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +43,7 @@
 }
 
 .footerCopyrightTitle {
-  font-size: 2vw;
+  font-size: 1.5vw;
   text-align: center;
   display: flex;
   justify-content: center;

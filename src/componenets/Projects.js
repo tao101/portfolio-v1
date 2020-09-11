@@ -21,29 +21,40 @@ export default class Projects extends React.Component {
         id="projects"
         style={{ backgroundColor: Colors(darkMode, "skills") }}
       >
-        <h1 style={{ color: Colors(!darkMode, "bgC") }}>Featured Projects</h1>
-        <div className="projectContainer row">
-          <CostumCard
-            darkMode={darkMode}
-            img={ontwik}
-            title="ontwik"
-            description="Collect stars & avoid obstacles while trying to put the ball into the right basket to unlock new levels!"
-          />
+        <div className="container-xl">
+          <h1 style={{ color: Colors(!darkMode, "bgC") }}>Featured Projects</h1>
+          <div className="projectContainer row">
+            <CostumCard
+              darkMode={darkMode}
+              img={ontwik}
+              title="ontwik"
+              description="Collect stars & avoid obstacles while trying to put the ball into the right basket to unlock new levels!"
+            />
 
-          <CostumCard
-            darkMode={darkMode}
-            img={ontwik}
-            title="ontwik"
-            link="https://ontwik-dev.com/founders"
-            description="Collect stars & avoid obstacles while trying to put the ball into the right basket to unlock new levels!"
-          />
-          <CostumCard
-            darkMode={darkMode}
-            img={ontwik}
-            title="ontwik"
-            link="https://ontwik-dev.com/founders"
-            description="Collect stars & avoid obstacles while trying to put the ball into the right basket to unlock new levels!"
-          />
+            <CostumCard
+              darkMode={darkMode}
+              img={ontwik}
+              title="ontwik"
+              link="https://ontwik-dev.com/founders"
+              description="Collect stars & avoid obstacles while trying to put the ball into the right basket to unlock new levels!"
+            />
+          </div>
+          <div className="projectContainer row">
+            <CostumCard
+              darkMode={darkMode}
+              img={ontwik}
+              title="ontwik"
+              description="Collect stars & avoid obstacles while trying to put the ball into the right basket to unlock new levels!"
+            />
+
+            <CostumCard
+              darkMode={darkMode}
+              img={ontwik}
+              title="ontwik"
+              link="https://ontwik-dev.com/founders"
+              description="Collect stars & avoid obstacles while trying to put the ball into the right basket to unlock new levels!"
+            />
+          </div>
         </div>
       </div>
     );
@@ -59,7 +70,7 @@ function CostumCard(props) {
   return (
     <div className="col-sm item">
       <Card
-        className="card"
+        className="card MuiPaper-elevation24"
         style={{ backgroundColor: Colors(darkMode, "bgC") }}
       >
         <CardHeader title={title} style={{ color: Colors(!darkMode, "bgC") }} />

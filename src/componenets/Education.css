@@ -2,7 +2,7 @@
 }
 
 .card {
-  margin: 1vw;
+  margin: 2vw 1vw;
 }
 
 .centerX {
@@ -41,6 +41,10 @@
   transform: scale(1.4);
 }
 
+.Education {
+  display: flex;
+}
+
 @media (min-width: 1800px) {
   .avatar {
     align-self: center;
@@ -66,5 +70,8 @@
     align-self: center;
     width: 15vw;
     height: 15vw;
+  }
+  .Education {
+    flex-direction: column;
   }
 }

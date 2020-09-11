@@ -4,6 +4,7 @@ import Brightness3Icon from "@material-ui/icons/Brightness3";
 import { Nav } from "react-bootstrap";
 
 import Navbar from "react-bootstrap/Navbar";
+import { Container } from "react-bootstrap";
 import logoDark from "../assets/logo-dark.png";
 import logoWhite from "../assets/logo-white.png";
 import "./NavBar.css";
@@ -23,37 +24,39 @@ class NavBar extends React.Component {
         variant={darkMode}
         expand="lg"
         style={{ backgroundColor: Colors(this.props.darkMode, "bgC") }}
-        className="navBar shadow-lg navbar-slide-nav"
+        className=" navBar shadow-lg navbar-slide-nav "
         collapseOnSelect
         fixed="top"
         sticky="top"
       >
-        <Navbar.Brand href="#home">
-          <img
-            src={logo}
-            width="60"
-            height="60"
-            loading="lazy"
-            alt="Taoufiq Lotfi portfolio"
-            className="d-inline-block align-top logo"
-          />{" "}
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto navbar-slide offcanvas">
-            <Nav.Link href="#Home">Home</Nav.Link>
-            <Nav.Link href="#skills">Skills</Nav.Link>
-            <Nav.Link href="#education">Education & Languages</Nav.Link>
-            <Nav.Link href="#projects">Featured Projects</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link>
-              <Brightness3Icon
-                onClick={this.onDarkMode}
-                className="darkMode"
-              ></Brightness3Icon>
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+        <div className="container-xl">
+          <Navbar.Brand href="#home">
+            <img
+              src={logo}
+              width="60"
+              height="60"
+              loading="lazy"
+              alt="Taoufiq Lotfi portfolio"
+              className="d-inline-block align-top logo"
+            />{" "}
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ml-auto navbar-slide offcanvas">
+              <Nav.Link href="#Home">Home</Nav.Link>
+              <Nav.Link href="#skills">Skills</Nav.Link>
+              <Nav.Link href="#education">Education & Languages</Nav.Link>
+              <Nav.Link href="#projects">Featured Projects</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link>
+                <Brightness3Icon
+                  onClick={this.onDarkMode}
+                  className="darkMode"
+                ></Brightness3Icon>
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </div>
       </Navbar>
     );
   }

@@ -2,26 +2,17 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  width: 100vw;
+.introContainer {
+  padding-top: 100px;
+  margin: auto;
+  width: 680px;
 }
 
-.App {
-  display: flex;
-  flex-direction: column;
-}
-.intro {
-  padding-top: 8vw;
-  padding-left: 5vw !important;
-  padding-right: 5vw !important;
-}
+.introTitle {
+  font-size: 3vw !important;
 
-.h1 {
-  font-size: 5vw !important;
-}
-
-h4 {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .button {
@@ -35,4 +26,67 @@ h4 {
 .button:hover {
   -webkit-transform: scale(1.25, 1.25);
   transform: scale(1.25, 1.25);
+}
+
+@media (max-width: 560px) {
+  .introContainer {
+    padding-top: 20px;
+    width: auto;
+  }
+  .introTitle {
+    font-size: 10vw !important;
+  }
+  .description {
+    font-size: 10vw !important;
+  }
+  .buttonsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+    padding-top: 5vw !important  ;
+    padding-bottom: 5vw !important  ;
+    margin: 10px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .introContainer {
+    padding-top: 50px;
+    margin: auto;
+    width: 80vw;
+  }
+  .introTitle {
+    font-size: 8vw !important;
+  }
+  .description {
+    font-size: 3vw !important;
+  }
+  .button {
+    padding: 3vw !important;
+
+    margin: 10px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .introContainer {
+    padding-top: 50px;
+    margin: auto;
+    width: 80vw;
+  }
+  .introTitle {
+    font-size: 8vw !important;
+  }
+  .description {
+    font-size: 3vw !important;
+  }
+  .button {
+    padding: 3vw !important;
+
+    margin: 10px !important;
+  }
 }

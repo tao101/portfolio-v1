@@ -7,51 +7,57 @@ export default class Intro extends React.Component {
     const resumeUrl = "https://smakosh.com/";
     const darkMode = this.props.darkMode;
     return (
-      <div className="container-xl intro Home" id="Home">
-        <h1 className="h1" style={{ color: Colors(darkMode, "headline") }}>
-          I'm Lotfi Taoufiq
-        </h1>
-        <br />
-        <h4>
-          <small class="text-muted">
-            I'm a self-taught developer, and I like making applications of
-            different varieties. I help founders add value to society by
-            crafting software using JavaScript tools, I love open source and
-            building side projects.
-          </small>
-        </h4>
-        <br />
-        <br />
-        <div>
-          <Button
-            variant="contained"
-            size="large"
-            style={{
-              backgroundColor: Colors(darkMode, "blue"),
-              color: Colors(darkMode, "white"),
-            }}
-            className="button shadow-lg"
-            href={resumeUrl}
+      <div className="container-xl  Home " id="Home">
+        <div className="introContainer">
+          <h1
+            className="introTitle"
+            style={{ color: Colors(darkMode, "headline") }}
           >
-            Resume
-          </Button>
-          <Button
-            variant="contained"
-            size="large"
-            style={{
-              borderColor: Colors(darkMode, "blue"),
-              color: Colors(darkMode, "blue"),
-              borderWidth: "2px",
-              backgroundColor: "transparent",
-              borderStyle: "solid",
-            }}
-            className="button shadow-lg"
-            href="#Contact"
-          >
-            Get In Touch
-          </Button>
+            I'm Lotfi Taoufiq
+          </h1>
           <br />
+          <h4>
+            <small class="text-muted description">
+              I'm a self-taught full stack JavaScript developer, and I like
+              making applications of different varieties. I help founders add
+              value to society by crafting software using JavaScript tools, I'm
+              really interested in Technology & solving technical problems. I
+              love open source and building side projects.
+            </small>
+          </h4>
           <br />
+
+          <div class="buttonsContainer">
+            <Button
+              variant="contained"
+              size="large"
+              style={{
+                backgroundColor: Colors(darkMode, "blue"),
+                color: Colors(darkMode, "white"),
+              }}
+              className="button shadow-lg "
+              href={resumeUrl}
+            >
+              Resume
+            </Button>
+            <Button
+              variant="contained"
+              size="large"
+              style={{
+                borderColor: Colors(darkMode, "blue"),
+                color: Colors(darkMode, "blue"),
+                borderWidth: "2px",
+                backgroundColor: "transparent",
+                borderStyle: "solid",
+              }}
+              className="button shadow-lg"
+              href="#Contact"
+            >
+              Get In Touch
+            </Button>
+            <br />
+            <br />
+          </div>
         </div>
       </div>
     );

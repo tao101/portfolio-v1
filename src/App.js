@@ -40,8 +40,9 @@ class App extends React.Component {
     const bgColor = Colors(darkMode, "bgC");
     return (
       <div style={{ backgroundColor: bgColor }}>
-        <div className="App">
+        <div className="App ">
           <NavBar switchDark={this.switchDark} darkMode={darkMode} />
+
           <Intro darkMode={darkMode} />
           <Skills darkMode={darkMode} />
           <Education darkMode={darkMode} />

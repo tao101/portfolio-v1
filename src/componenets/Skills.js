@@ -11,48 +11,50 @@ export default class Skills extends React.Component {
         id="skills"
         style={{ backgroundColor: Colors(darkMode, "skills") }}
       >
-        <h1 style={{ color: Colors(!darkMode, "bgC") }}>Skills</h1>
-        <div className="container-lx intro Home">
-          <div className="row">
-            <div className="col-sm item">
-              <img
-                src={require("../assets/webDev.svg")}
-                className="img-fluid skillImg"
-                alt="Full stack development"
-              />
+        <div className="container-xl">
+          <h1 style={{ color: Colors(!darkMode, "bgC") }}>Skills</h1>
+          <div className="container-lx intro Home">
+            <div className="row">
+              <div className="col-sm item">
+                <img
+                  src={require("../assets/webDev.svg")}
+                  className="img-fluid skillImg"
+                  alt="Full stack development"
+                />
 
-              <h3
-                className="itemTitle"
-                style={{ color: Colors(!darkMode, "bgC") }}
-              >
-                Full stack development
-              </h3>
-            </div>
-            <div className="col-sm item">
-              <img
-                src={require("../assets/mobDev.svg")}
-                className="img-fluid skillImg"
-                alt="Mobile App Development"
-              />
-              <h3
-                className="itemTitle"
-                style={{ color: Colors(!darkMode, "bgC") }}
-              >
-                Mobile App Development
-              </h3>
-            </div>
-            <div className="col-sm item">
-              <img
-                src={require("../assets/ui.svg")}
-                className="img-fluid skillImg"
-                alt="UI/UX Design"
-              />
-              <h3
-                className="itemTitle"
-                style={{ color: Colors(!darkMode, "bgC") }}
-              >
-                UI/UX Design
-              </h3>
+                <h3
+                  className="itemTitle"
+                  style={{ color: Colors(!darkMode, "bgC") }}
+                >
+                  Full stack development
+                </h3>
+              </div>
+              <div className="col-sm item">
+                <img
+                  src={require("../assets/mobDev.svg")}
+                  className="img-fluid skillImg"
+                  alt="Mobile App Development"
+                />
+                <h3
+                  className="itemTitle"
+                  style={{ color: Colors(!darkMode, "bgC") }}
+                >
+                  Mobile App Development
+                </h3>
+              </div>
+              <div className="col-sm item">
+                <img
+                  src={require("../assets/ui.svg")}
+                  className="img-fluid skillImg"
+                  alt="UI/UX Design"
+                />
+                <h3
+                  className="itemTitle"
+                  style={{ color: Colors(!darkMode, "bgC") }}
+                >
+                  UI/UX Design
+                </h3>
+              </div>
             </div>
           </div>
         </div>

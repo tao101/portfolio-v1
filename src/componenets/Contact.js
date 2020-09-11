@@ -58,7 +58,7 @@ export default class Contact extends React.Component {
   render() {
     const darkMode = this.props.darkMode;
     return (
-      <div className="Contact " id="contact">
+      <div className="Contact container-xl" id="contact">
         <h3 style={{ color: Colors(!darkMode, "bgC") }}>
           Feel free to email me @{" "}
           <a href="mailto:leh.lotfi@gmail.com">leh.lotfi@gmail.com </a>
