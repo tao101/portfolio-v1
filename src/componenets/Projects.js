@@ -21,7 +21,7 @@ export default class Projects extends React.Component {
         id="projects"
         style={{ backgroundColor: Colors(darkMode, "skills") }}
       >
-        <div className="container-xl">
+        <div className="container-xl paddingFIx">
           <h1 style={{ color: Colors(!darkMode, "bgC") }}>Featured Projects</h1>
           <div className="projectContainer row">
             <CostumCard

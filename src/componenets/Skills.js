@@ -11,7 +11,7 @@ export default class Skills extends React.Component {
         id="skills"
         style={{ backgroundColor: Colors(darkMode, "skills") }}
       >
-        <div className="container-xl">
+        <div className="container-xl paddingTopP">
           <h1 style={{ color: Colors(!darkMode, "bgC") }}>Skills</h1>
           <div className="container-lx intro Home">
             <div className="row">

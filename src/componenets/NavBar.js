@@ -4,7 +4,7 @@ import Brightness3Icon from "@material-ui/icons/Brightness3";
 import { Nav } from "react-bootstrap";
 
 import Navbar from "react-bootstrap/Navbar";
-import { Container } from "react-bootstrap";
+
 import logoDark from "../assets/logo-dark.png";
 import logoWhite from "../assets/logo-white.png";
 import "./NavBar.css";
@@ -30,7 +30,7 @@ class NavBar extends React.Component {
         sticky="top"
       >
         <div className="container-xl">
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="#Home">
             <img
               src={logo}
               width="60"

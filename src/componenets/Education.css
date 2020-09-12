@@ -1,20 +1,24 @@
-.item {
+.cardEducation {
+  margin: 3vh 0vw;
 }
 
-.card {
-  margin: 2vw 1vw;
+.cardEducation:hover {
+  transform: scale(1.1);
+}
+
+.rowCotnainer {
+  display: flex;
 }
 
 .centerX {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.container {
+.containersdsd {
   display: flex;
   flex-direction: column;
+  padding-top: 10px !important;
 }
 
 .logos {
@@ -27,13 +31,18 @@
 
 .avatar {
   align-self: center;
-  width: 7vw;
-  height: 7vw;
+  width: 100px !important;
+  height: 100px !important ;
+  margin: 0px 45px !important;
+
+  padding: 0px 10px;
 }
 
 .name {
   text-align: center;
-  font-size: 1.3vw;
+  font-size: 20px !important;
+  padding: 0px 0px !important;
+  margin: 0px 0px !important;
 }
 
 .avatar:hover {
@@ -43,35 +52,67 @@
 
 .Education {
   display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-@media (min-width: 1800px) {
-  .avatar {
-    align-self: center;
-    width: 5vw;
-    height: 5vw;
-  }
+.title {
+  padding-bottom: 1vh;
 }
 
-@media (max-width: 1100px) and (min-width: 600px) {
-  .underOne {
+@media (max-width: 1129px) {
+  .flexContainer {
+    display: flex;
     flex-direction: column;
   }
-
-  .avatar {
-    align-self: center;
-    width: 25vw;
-    height: 25vw;
+  .cardEducation {
+    margin: 1vh 0vw;
+  }
+  .title {
+    padding: 20px 0px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+  }
   .avatar {
     align-self: center;
-    width: 15vw;
-    height: 15vw;
+    width: 15vw !important;
+    height: 15vw !important ;
+
+    margin: 5px 0px !important;
+
+    padding: 2px 2px !important;
   }
-  .Education {
+  .name {
+    text-align: center;
+    font-size: 15px !important;
+    padding: 5px 0px !important;
+    margin: 0px 0px !important;
+  }
+}
+
+@media (max-width: 376px) {
+  .flexContainer {
+    display: flex;
     flex-direction: column;
+  }
+  .avatar {
+    align-self: center;
+    width: 15vw !important;
+    height: 15vw !important ;
+
+    margin: 5px 0px !important;
+
+    padding: 2px 2px !important;
+  }
+  .name {
+    text-align: center;
+    font-size: 10px !important;
+    padding: 5px 0px !important;
+    margin: 0px 0px !important;
   }
 }

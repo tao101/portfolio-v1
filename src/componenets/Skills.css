@@ -1,20 +1,19 @@
 .skills {
-  padding-left: 5vw !important;
-  padding-right: 5vw !important;
   text-align: center;
-  padding-top: 25vh;
-  padding-bottom: 30vh;
 
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
   text-align: center;
 }
 
+.paddingTopP {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
 .skillImg {
   width: 25vh !important;
   height: 25vh !important;
 }
 .item {
-  margin: 2vw;
 }
 .itemTitle {
   margin-top: 2vh;
@@ -22,4 +21,16 @@
 }
 
 .row {
+  display: flex;
+}
+
+@media (max-width: 645px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .paddingTopP {
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+  }
 }

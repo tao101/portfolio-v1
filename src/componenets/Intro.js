@@ -17,7 +17,7 @@ export default class Intro extends React.Component {
           </h1>
           <br />
           <h4>
-            <small class="text-muted description">
+            <small className="text-muted description">
               I'm a self-taught full stack JavaScript developer, and I like
               making applications of different varieties. I help founders add
               value to society by crafting software using JavaScript tools, I'm
@@ -27,7 +27,7 @@ export default class Intro extends React.Component {
           </h4>
           <br />
 
-          <div class="buttonsContainer">
+          <div className="buttonsContainer">
             <Button
               variant="contained"
               size="large"
@@ -51,7 +51,7 @@ export default class Intro extends React.Component {
                 borderStyle: "solid",
               }}
               className="button shadow-lg"
-              href="#Contact"
+              href="#contact"
             >
               Get In Touch
             </Button>

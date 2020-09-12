@@ -67,7 +67,7 @@ export default class Contact extends React.Component {
         </h3>
 
         <form name="contactForm" onSubmit={this.handleFormSubmit}>
-          <p>
+          <div>
             <label className="label">
               <p
                 className="name"
@@ -86,8 +86,8 @@ export default class Contact extends React.Component {
                 required
               />
             </label>
-          </p>
-          <p>
+          </div>
+          <div>
             <label className="label ">
               <p
                 className="email"
@@ -107,8 +107,8 @@ export default class Contact extends React.Component {
                 required
               />
             </label>
-          </p>
-          <p>
+          </div>
+          <div>
             <label className="label ">
               <p
                 className="message"
@@ -126,7 +126,7 @@ export default class Contact extends React.Component {
                 required
               ></textarea>
             </label>
-          </p>
+          </div>
           <p>
             <Button
               style={{

@@ -1,18 +1,112 @@
 .Projects {
-  padding-left: 5vw !important;
-  padding-right: 5vw !important;
+  padding-left: 1vw !important;
+  padding-right: 1vw !important;
   text-align: center;
-  padding-top: 25vh;
-  padding-bottom: 25vh;
+  padding-top: 300px;
+  padding-bottom: 350px;
 
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
   text-align: center;
 }
 
+.card {
+  margin: 10px 10px;
+}
+
 .card:hover {
+  overflow: visible;
+}
+
+.card:hover .cardImg {
   transform: scale(1.1);
 }
 
 .cardImg {
-  height: 28vw !important;
+  height: 400px !important;
+}
+
+.card {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 1100px) and (min-width: 993px) {
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .cardImg {
+    height: 70vh !important;
+  }
+  .Projects {
+    padding-top: 400px;
+    padding-bottom: 350px;
+
+    clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
+  }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+  .projectContainer {
+    background-color: red;
+  }
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .cardImg {
+    height: 70vh !important;
+  }
+  .Projects {
+    padding-top: 300px;
+    padding-bottom: 350px;
+
+    clip-path: polygon(0 22%, 100% 0, 100% 88%, 0% 100%);
+  }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+  .card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardImg {
+    height: 35vh !important;
+  }
+  .Projects {
+    padding-top: 250px;
+    padding-bottom: 300px;
+
+    clip-path: polygon(0 11%, 100% 0, 100% 91%, 0% 100%);
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .cardImg {
+    height: 35vh !important;
+  }
+  .Projects {
+    padding-top: 300px;
+    padding-bottom: 350px;
+
+    clip-path: polygon(0 11%, 100% 0, 100% 88%, 0% 100%);
+  }
 }

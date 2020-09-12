@@ -29,13 +29,15 @@ export default class Education extends React.Component {
 
     return (
       <div
-        className="Education container-xl intro Home underOne"
+        className="Education container-xl intro Home underOne flexContainer"
         id="education"
       >
-        <div className="col-sm item">
-          <h3 style={{ color: Colors(darkMode, "headline") }}>Education</h3>
+        <div className="col-sm item flexContainer">
+          <h3 style={{ color: Colors(darkMode, "headline") }} className="title">
+            Education
+          </h3>
           <Card
-            className="card MuiPaper-elevation24	"
+            className="cardEducation MuiPaper-elevation24	"
             style={{ backgroundColor: Colors(darkMode, "bgLight") }}
           >
             <CardContent>
@@ -48,7 +50,7 @@ export default class Education extends React.Component {
             </CardContent>
           </Card>
           <Card
-            className="card MuiPaper-elevation24"
+            className="cardEducation MuiPaper-elevation24"
             style={{ backgroundColor: Colors(darkMode, "bgLight") }}
           >
             <CardContent>
@@ -59,7 +61,7 @@ export default class Education extends React.Component {
             </CardContent>
           </Card>
           <Card
-            className="card MuiPaper-elevation24"
+            className="cardEducation MuiPaper-elevation24"
             style={{ backgroundColor: Colors(darkMode, "bgLight") }}
           >
             <CardContent>
@@ -70,7 +72,7 @@ export default class Education extends React.Component {
             </CardContent>
           </Card>
           <Card
-            className="card MuiPaper-elevation24"
+            className="cardEducation MuiPaper-elevation24"
             style={{ backgroundColor: Colors(darkMode, "bgLight") }}
           >
             <CardContent>
@@ -81,7 +83,7 @@ export default class Education extends React.Component {
             </CardContent>
           </Card>
           <Card
-            className="card MuiPaper-elevation24"
+            className="cardEducation MuiPaper-elevation24"
             style={{ backgroundColor: Colors(darkMode, "bgLight") }}
           >
             <CardContent>
@@ -93,12 +95,12 @@ export default class Education extends React.Component {
           </Card>
         </div>
         <div className="col-sm item ">
-          <h3 style={{ color: Colors(darkMode, "headline") }}>
+          <h3 className="title" style={{ color: Colors(darkMode, "headline") }}>
             Language And Frameworks I speak
           </h3>
           <div className="centerX">
-            <div className="container">
-              <div className="row">
+            <div className="containersdsd">
+              <div className="rowCotnainer">
                 <div className=" logos">
                   <img
                     className="avatar img-fluid"
@@ -170,7 +172,7 @@ export default class Education extends React.Component {
                   </h4>
                 </div>
               </div>
-              <div className="row">
+              <div className="rowCotnainer">
                 <div className=" logos">
                   <img
                     className="avatar img-fluid"
@@ -242,7 +244,7 @@ export default class Education extends React.Component {
                   </h4>
                 </div>
               </div>
-              <div className="row">
+              <div className="rowCotnainer">
                 <div className=" logos">
                   <img
                     className="avatar img-fluid"
@@ -314,7 +316,7 @@ export default class Education extends React.Component {
                   </h4>
                 </div>
               </div>
-              <div className="row">
+              <div className="rowCotnainer">
                 <div className=" logos">
                   <img
                     className="avatar img-fluid"
