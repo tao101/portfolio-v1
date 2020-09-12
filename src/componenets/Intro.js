@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
 import Colors from "../assets/colors";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 export default class Intro extends React.Component {
   render() {
@@ -16,15 +17,15 @@ export default class Intro extends React.Component {
             I'm Lotfi Taoufiq
           </h1>
           <br />
-          <h4>
-            <small className="text-muted description">
-              I'm a self-taught full stack JavaScript developer, and I like
-              making applications of different varieties. I help founders add
-              value to society by crafting software using JavaScript tools, I'm
-              really interested in Technology & solving technical problems. I
-              love open source and building side projects.
-            </small>
+
+          <h4 className="description text-muted">
+            I'm a self-taught full stack JavaScript developer, and I like making
+            applications of different varieties. I help founders add value to
+            society by crafting software using JavaScript tools, I'm really
+            interested in Technology & solving technical problems. I love open
+            source and building side projects.
           </h4>
+
           <br />
 
           <div className="buttonsContainer">
@@ -55,8 +56,9 @@ export default class Intro extends React.Component {
             >
               Get In Touch
             </Button>
-            <br />
-            <br />
+            <a className="expandContainer" href="#skills">
+              <ExpandMoreIcon className="expand" />
+            </a>
           </div>
         </div>
       </div>

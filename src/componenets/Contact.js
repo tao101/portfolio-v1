@@ -59,18 +59,22 @@ export default class Contact extends React.Component {
     const darkMode = this.props.darkMode;
     return (
       <div className="Contact container-xl" id="contact">
-        <h3 style={{ color: Colors(!darkMode, "bgC") }}>
+        <h3 class="contactTitle" style={{ color: Colors(!darkMode, "bgC") }}>
           Feel free to email me @{" "}
           <a href="mailto:leh.lotfi@gmail.com">leh.lotfi@gmail.com </a>
           <br />
           Or fill in the contact form down below
         </h3>
 
-        <form name="contactForm" onSubmit={this.handleFormSubmit}>
+        <form
+          class="contactForm"
+          name="contactForm"
+          onSubmit={this.handleFormSubmit}
+        >
           <div>
             <label className="label">
               <p
-                className="name"
+                className="message"
                 style={{
                   color: Colors(darkMode, "headline"),
                 }}

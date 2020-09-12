@@ -2,69 +2,6 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 560px) {
-  .introContainer {
-    padding-top: 20px;
-    width: auto;
-  }
-  .introTitle {
-    font-size: 10vw !important;
-  }
-  .description {
-    font-size: 10vw !important;
-  }
-  .buttonsContainer {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .button {
-    padding-left: 5vw !important;
-    padding-right: 5vw !important;
-    padding-top: 5vw !important  ;
-    padding-bottom: 5vw !important  ;
-    margin: 10px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .introContainer {
-    padding-top: 50px;
-    margin: auto;
-    width: 80vw;
-  }
-  .introTitle {
-    font-size: 8vw !important;
-  }
-  .description {
-    font-size: 3vw !important;
-  }
-  .button {
-    padding: 3vw !important;
-
-    margin: 10px !important;
-  }
-}
-
-@media (max-width: 992px) {
-  .introContainer {
-    padding-top: 50px;
-    margin: auto;
-    width: 80vw;
-  }
-  .introTitle {
-    font-size: 8vw !important;
-  }
-  .description {
-    font-size: 3vw !important;
-  }
-  .button {
-    padding: 3vw !important;
-
-    margin: 10px !important;
-  }
-}
-
 .introContainer {
   padding-top: 100px;
   margin: auto;
@@ -88,4 +25,86 @@
 .button:hover {
   -webkit-transform: scale(1.25, 1.25);
   transform: scale(1.25, 1.25);
+}
+.description {
+  color: "#6f6f6f";
+}
+
+.expandContainer {
+  visibility: hidden;
+}
+
+@media (max-width: 1100px) and (min-width: 993px) {
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+  .introContainer {
+    padding-top: 35px;
+    margin: auto;
+  }
+  .buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+  }
+  .button {
+    padding: 10px !important;
+    margin: 10px !important;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+  .introContainer {
+    padding-top: 35px;
+    margin: auto;
+  }
+  .buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+  }
+  .button {
+    padding: 10px !important;
+    margin: 10px !important;
+  }
+  .expand {
+    width: 100px !important;
+    height: 100px !important;
+    color: #00c3ff;
+  }
+  .expandContainer {
+    visibility: visible;
+    margin: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .introContainer {
+    padding-top: 15px;
+    margin: auto;
+  }
+  .buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px;
+  }
+  .button {
+    padding: 8px !important;
+    margin: 8px !important;
+  }
+  .introTitle {
+    font-size: 35px !important;
+  }
+  .description {
+    font-size: 15px !important;
+  }
+  .expand {
+    width: 100px !important;
+    height: 100px !important;
+    color: #00c3ff;
+  }
+  .expandContainer {
+    visibility: visible;
+    margin: auto;
+  }
 }

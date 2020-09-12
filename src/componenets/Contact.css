@@ -1,8 +1,6 @@
 .Contact {
-  padding-left: 8vw !important;
-  padding-right: 5vw !important;
-  padding-top: 15vh;
-  padding-bottom: 1vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -10,13 +8,13 @@
 .subsEmailContainer {
   text-align: center;
 
-  width: 60vw;
-  padding: 2vw 3vw;
+  width: 900px;
+  padding: 20px 30px;
   align-self: center;
   border: 2px;
   border-radius: 8px;
   position: relative;
-  bottom: -12vh;
+  bottom: -150px;
 }
 
 .formContainer {
@@ -26,9 +24,9 @@
 }
 
 .emailField {
-  margin: 1vw 0px !important;
-  margin-left: 2vw !important;
-  width: 60vw !important;
+  margin: 18px 0px !important;
+  margin-left: 40px !important;
+  width: 600px !important;
   border-color: red !important;
 }
 .emailFieldInput {
@@ -36,61 +34,174 @@
 }
 
 .buttons {
-  margin: 1vw 0px !important;
-  margin-left: 2vw !important;
-  width: 60vw !important;
-  border-color: red !important;
-  width: 15vw !important;
+  margin: 18px 0px !important;
+  margin-left: 40px !important;
+  margin-right: 40px !important;
+  width: 200px !important;
 }
 
 .bigText {
-  font-size: 3vw;
+  font-size: 60px;
 }
 
 .smallText {
-  font-size: 1.5vw;
+  font-size: 28px;
 }
 
 .label {
-  width: 40vw;
+  width: 400px !important;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .labelInput {
-  width: 40vw;
+  width: 600px !important;
+  height: 40px !important;
 }
 .labelInput:focus {
   outline-color: red;
 }
 
-.name {
-  font-size: 2vw;
-  line-height: 3vw;
-  margin: 10px;
-  padding: 1vw 0px;
-  margin: 0px;
-}
 .email {
-  font-size: 2vw;
-  line-height: 3vw;
+  font-size: 30px;
+  line-height: 10px;
   margin: 10px;
-  padding: 1vw 0px;
+  padding: 20px 0px;
   margin: 0px;
 }
 .message {
-  font-size: 2vw;
-  line-height: 3vw;
+  font-size: 30px;
+  line-height: 10px;
   margin: 10px;
-  padding: 1vw 0px;
+  padding: 20px 0px;
   margin: 0px;
 }
 
 .SendButtons {
-  margin: 1vw 0px !important;
+  margin: 3vw 0px !important;
+  padding: 10px 0px !important;
+  width: 250px !important;
+}
 
-  width: 60vw !important;
+@media (max-width: 1100px) and (min-width: 993px) {
+  .contactForm,
+  .contactTitle {
+    padding-left: 50px !important;
+  }
+}
 
-  width: 15vw !important;
+@media (max-width: 992px) and (min-width: 769px) {
+  .contactForm,
+  .contactTitle {
+    padding-left: 50px !important;
+  }
+
+  .subsEmailContainer {
+    width: 600px;
+    bottom: -120px;
+  }
+
+  .bigText {
+    font-size: 40px;
+  }
+  .smallText {
+    font-size: 18px;
+  }
+  .label {
+    width: 200px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .labelInput {
+    width: 400px !important;
+    height: 40px !important;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+  .contactForm,
+  .contactTitle {
+    padding-left: 25px !important;
+  }
+  .subsEmailContainer {
+    width: 500px;
+    bottom: -110px;
+  }
+
+  .bigText {
+    font-size: 30px;
+  }
+  .smallText {
+    font-size: 16px;
+  }
+  .label {
+    width: 260px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .labelInput {
+    width: 450px !important;
+    height: 40px !important;
+  }
+  .emailField {
+    margin: 18px 0px !important;
+    margin-left: 30px !important;
+    width: 800px !important;
+    border-color: red !important;
+  }
+  .buttons {
+    margin: 18px 0px !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    width: 250px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .contactForm,
+  .contactTitle {
+    padding-left: 15px !important;
+  }
+  .subsEmailContainer {
+    width: 280px;
+    bottom: -110px;
+  }
+
+  .formContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bigText {
+    font-size: 25px;
+  }
+  .smallText {
+    font-size: 12px;
+  }
+  .label {
+    width: 250px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .labelInput {
+    width: 250px !important;
+    height: 40px !important;
+  }
+  .emailField {
+    margin: 10px 0px !important;
+    margin-left: 10px !important;
+    width: 250px !important;
+    border-color: red !important;
+  }
+  .buttons {
+    margin: 18px 0px !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    width: 250px !important;
+  }
 }

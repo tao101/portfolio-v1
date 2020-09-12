@@ -1,6 +1,6 @@
 .Footer {
-  padding-top: 15vw;
-  padding-bottom: 10vw;
+  padding-top: 220px;
+  padding-bottom: 150px;
 
   background: rgb(0, 114, 255);
   background: linear-gradient(
@@ -30,7 +30,21 @@
 }
 
 .iconSocail {
-  margin: 1vw;
+  margin: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+.linkdin {
+  margin: 20px;
+  width: 120px;
+  height: 60px;
+}
+
+.iconSocailSmall {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
 }
 
 .footerCopyright {
@@ -43,9 +57,61 @@
 }
 
 .footerCopyrightTitle {
-  font-size: 1.5vw;
+  font-size: 20px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+  .footerCopyrightTitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+  .footerCopyrightTitle {
+    font-size: 15px;
+  }
+  .footerTitle {
+    font-size: 35px;
+    padding: 15px 0px;
+  }
+  .iconSocailSmall {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .centerIcons {
+    margin: auto;
+  }
+  .iconSocail {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+  }
+  .linkdin {
+    margin: 20px;
+    width: 120px;
+    height: 60px;
+  }
+  .footerCopyrightTitle {
+    font-size: 18px;
+  }
+  .footerTitle {
+    font-size: 15px;
+    padding: 15px 0px;
+  }
+  .iconSocailSmall {
+    width: 40px;
+    height: 40px;
+    margin: 20px 0px;
+  }
+  .footerCopyright {
+    flex-direction: column;
+  }
 }
