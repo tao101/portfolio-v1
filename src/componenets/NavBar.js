@@ -1,6 +1,7 @@
 import React from "react";
 
 import Brightness3Icon from "@material-ui/icons/Brightness3";
+import Brightness5Icon from "@material-ui/icons/Brightness5";
 import { Nav } from "react-bootstrap";
 
 import Navbar from "react-bootstrap/Navbar";
@@ -19,6 +20,18 @@ class NavBar extends React.Component {
     const darkMode = this.props.darkMode ? "dark" : "light";
 
     const logo = !this.props.darkMode ? logoDark : logoWhite;
+
+    const darkModeIcon = !this.props.darkMode ? (
+      <Brightness3Icon
+        onClick={this.onDarkMode}
+        className="darkMode"
+      ></Brightness3Icon>
+    ) : (
+      <Brightness5Icon
+        onClick={this.onDarkMode}
+        className="darkMode"
+      ></Brightness5Icon>
+    );
     return (
       <Navbar
         variant={darkMode}
@@ -48,12 +61,7 @@ class NavBar extends React.Component {
               <Nav.Link href="#education">Education & Languages</Nav.Link>
               <Nav.Link href="#projects">Featured Projects</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
-              <Nav.Link>
-                <Brightness3Icon
-                  onClick={this.onDarkMode}
-                  className="darkMode"
-                ></Brightness3Icon>
-              </Nav.Link>
+              <Nav.Link>{darkModeIcon}</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </div>
