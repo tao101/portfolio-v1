@@ -40,7 +40,7 @@ export default class Intro extends React.Component {
               className="button shadow-lg "
               href={resumeUrl}
             >
-              Resume
+              View resume
             </Button>
             <Button
               variant="contained"
