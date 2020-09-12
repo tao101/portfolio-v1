@@ -5,7 +5,8 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 export default class Intro extends React.Component {
   render() {
-    const resumeUrl = "https://smakosh.com/";
+    const resumeUrl =
+      "https://drive.google.com/file/d/1kt-GfO21gWCL3D2VI-kF1jujS46yyaD5/view?usp=sharing";
     const darkMode = this.props.darkMode;
     return (
       <div className="container-xl  Home " id="Home">
