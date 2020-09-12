@@ -42,7 +42,7 @@ export default class Projects extends React.Component {
               img={pomodoro}
               title="Pomodoro Timer"
               link="https://github.com/tao101/pomodoroTimer"
-              description="Pomofocus is a customizable pomodoro timer that works on desktop & mobile browser."
+              description="Pomodoro Timer is a customizable pomodoro timer that works on desktop & mobile browser."
             />
           </div>
           <div className="projectContainer row">
