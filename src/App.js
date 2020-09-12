@@ -24,11 +24,6 @@ class App extends React.Component {
       // dark mode
       this.setState({ darkMode: true });
     }
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", (e) => {
-        this.setState({ darkMode: e.matches });
-      });
   };
 
   switchDark = () => {
