@@ -10,8 +10,6 @@ import {
   Typography,
 } from "@material-ui/core";
 
-import ontwik from "../assets/ontwik.png";
-
 import portfolio from "../assets/portfolio.png";
 import celebsLikeme from "../assets/celebsLikeme.png";
 import phoneSanitizer from "../assets/phoneSanitizer.png";
