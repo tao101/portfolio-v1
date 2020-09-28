@@ -20,7 +20,7 @@ export default class Intro extends React.Component {
           <br />
 
           <h4 className="description text-muted">
-            I'm a self-taught full stack JavaScript developer, and I like making
+            I'm a full stack JavaScript developer, and I like making
             applications of different varieties. I help founders add value to
             society by crafting software using JavaScript tools, I'm really
             interested in Technology & solving technical problems. I love open
